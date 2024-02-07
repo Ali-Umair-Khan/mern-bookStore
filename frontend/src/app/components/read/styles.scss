@@ -1,0 +1,186 @@
+
+.bookStore{
+    max-width:99vw;
+    padding:1rem;
+    margin: 0 auto;
+    min-height:100vh;
+    h2{
+        font-size:4rem;
+        text-align:center;
+        padding:1rem 1.5rem;
+        margin:1rem;
+    }
+}
+
+form {
+    max-width:99vw;
+    margin: 0 auto;
+    text-align:center;
+    padding:1rem;
+    margin:1rem;
+    margin-bottom:4rem;
+    @media (max-width:70rem){
+        display:flex;
+        flex-direction:column;
+        place-items:center;
+        place-content:center;
+    }
+
+    label{
+        font-size:1rem;
+    }
+    input{
+    padding:0.7rem 1rem;
+    margin:1rem;
+    border:1.6px solid transparent;
+    background-color: rgb(186, 211, 253);
+    // background-image: linear-gradient(to right,rgb(184, 208, 246) 50%, rgb(215, 215, 252) 50%);
+    outline:none;
+    border-radius:0.2rem;
+    color:black;
+    font-size:1rem;
+    cursor:pointer;
+    &:focus{
+        background-color:rgb(106, 105, 105);
+        background-image: none;
+        color:white;
+    }
+}
+button{
+    min-width:14rem;
+    padding:0.7rem 1rem;
+    margin:1rem;
+    border:2px solid transparent;
+    outline:none;
+    border-radius:0.2rem;
+    font-size:1rem;
+    color:white;
+    background-color:black;
+}
+}
+// .book_details{
+//     display:flex;
+//     flex-direction:row;
+//     gap: 2rem;
+//     // place-items:center;
+//     align-items:center;
+//     justify-content:space-around;
+//     // place-content:center;
+//     padding:1rem;
+//     td{
+//         min-width: 3rem;
+//         padding:1rem;
+//         margin:1rem;
+//     }
+// }
+
+
+// /* Apply styles to the entire table */
+// table {
+//     width: 100%;
+//     border-collapse: collapse;
+//     margin-bottom: 20px;
+//   }
+  
+//   /* Apply styles to the table header */
+//   thead {
+//     background-color: #f2f2f2;
+//   }
+  
+//   /* Apply styles to header cells */
+//   th {
+//     padding: 12px;
+//     text-align: left;
+//     border-bottom: 1px solid #ddd;
+//   }
+  
+//   /* Apply alternating background color to table rows */
+//   tbody tr:nth-child(even) {
+//     background-color: #f9f9f9;
+//   }
+  
+//   /* Apply styles to table cells */
+//   td {
+//     padding: 10px;
+//     border-bottom: 1px solid #ddd;
+//   }
+  
+//   /* Apply styles to the last row (optional) */
+//   tbody tr:last-child {
+//     border-bottom: none;
+//   }
+  
+
+//   <table>
+//     <thead>
+//         <tr className='book_details'>
+//           <th>title</th>
+//           <th>author</th>
+//           <th>publish year</th>
+
+//         </tr>
+//     </thead>
+//       <tbody>
+//             {data && data.data.map(d=>(
+//                 <tr key={d._id} className='book_details'>
+//                     <td>{d.title}</td>
+//                     <td>{d.author}</td>
+//                     <td>{d.publishYear}</td>
+//                 </tr>
+//             ))}
+//       </tbody>
+    
+// </table>)
+
+table{
+    min-width: 88vw;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    padding:1rem;
+    margin:1rem;
+    thead{
+        background-color: #f2f2f2;
+        tr{
+            th{
+                padding: 1rem;
+                text-align: center;
+                border-bottom: 1px solid #ddd;
+            }
+        }
+    }
+    tbody{
+        width:100%;
+        // .book_details{
+        //     display:flex;
+        //     flex-direction:row;
+        //     // gap: 2rem;
+        //     // place-items:center;
+        //     align-items:center;
+        //     justify-content:space-around;
+        //     // place-content:center;
+        //     padding:1rem;
+        // }
+        tr{
+            // width:100%;
+            &:nth-child(even) {
+                background-color: #f9f9f9;
+              }
+            &:last-child {
+                border-bottom: none;
+            }
+            a{
+                width:100%;
+                height:auto;
+            }
+            td{
+                padding: 1rem;
+                border-bottom: 1px solid #ddd;
+                // min-width: 3rem;
+                text-align:center;
+                margin:1rem;
+                // min-width:100%;
+            }
+        }
+
+    }
+}
